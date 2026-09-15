@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*General*/
+img{
+    max-width: 100%;
+}
+
+a{
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.logo{
+    width: 70px;
+}
+
+header{
+    background-image: url(../img/header-cinco.png) ;
+    background-repeat: repeat-x;
+    border-bottom: 5px solid #5a2a03;
+    width: 100%;
+
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.hamburguesa{
+    color:#442002 ;
+    border: 1px solid black;
+    font-size: 3rem;
+}
+.link-menu{
+    color: #442002;
+    background-color: rgba(235, 227, 210, 0.85);
+    padding: 0.3rem 0.5rem;
+    font-weight: bold;
+    padding: 0.3rem;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+
+.link-menu:hover{
+    background-color: #833e06;
+}
+
+.link-menu:active{
+    text-decoration: line-through;
+    color: white;
+}
+
+body{
+    background-color: #ebe3d2;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+main{
+    padding: 1.5rem;
+    color: #442002;
+}  
+
+article li{
+    margin: 1.3rem;
+    font-size: 1.3rem;
+}
+
+h1{
+    display: flex;
+    color: #833e06;
+    margin: 0.5rem;
+    font-size: 3rem;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+
+
+footer{
+    margin: 1rem;
+    background-image: url(../img/footer-dos\ \(1\).png) ;
+    background-repeat: repeat-x;
+    border-bottom: 5px solid #5a2a03;
+    border-top: 5px solid #5a2a03;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background-color: rgba(60, 30, 10, 0.8);
+    color: white;
+    padding: 20px;
+    
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+
+}
+
+
+footer p{
+    color: #000000;
+    background-color: rgba(235, 227, 210, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption{
+    text-decoration: underline;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Inicio*/
+.main-index{
+    padding: 1.5rem;
+    color: #442002;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "hero"
+        "bienvenida" 
+        "informacion" 
+        "productos";
+    gap: 2rem;
+}
+
+.bienvenida{
+    grid-area: bienvenida;
+}
+
+.informacion{
+    grid-area: informacion;
+}
+
+.productos{
+    grid-area: productos;
+}
+
+.hero{
+    grid-area: hero;
+    justify-self: center;
+}
+.hero{
+    background-color: #833e06;
+    color: #ebe3d2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: fit-content;
+    border-radius: 5px;
+    gap: 20px;
+}
+    
+
+
+.hero h2{
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+.hero a{
+    background-color: #442002;
+    color: #ebe3d2;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero a:hover{
+    background-color: #977253;
+}
+
+.hero a:active{
+    text-decoration: line-through;
+    color: white;
+}
+
+.index-h2{
+    text-decoration: underline;
+    font-size: 2rem;
+    font-weight: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+/*Galeria*/
+
+.escritorio{
+    display: none;
+}
+
+
+/*Grid fotos galeria*/
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 280px 280px;
+  gap: 1rem;
+  
+  grid-template-areas:
+    "horizontal-1 horizontal-1 horizontal-1 cuadrada-1"
+    "cuadrada-2 horizontal-2 horizontal-2 horizontal-2";
+}
+
+.galeria figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.galeria img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.foto-horizontal-1 {
+  grid-area: horizontal-1;
+}
+
+.foto-cuadrada-1 {
+  grid-area: cuadrada-1;
+}
+
+.foto-cuadrada-2 {
+  grid-area: cuadrada-2;
+}
+
+.foto-horizontal-2 {
+  grid-area: horizontal-2;
+}
+
+.foto-horizontal-1 img {
+  object-position: center 60%;
+  border-radius: 23px;
+}
+
+.foto-cuadrada-1 img {
+  object-position: center 80%;
+  border-radius: 23px;
+}
+
+.foto-cuadrada-2 img {
+  object-position: center 40%;
+  border-radius: 23px;
+}
+
+.foto-horizontal-2 img {
+  object-position: center 75%;
+  border-radius: 23px;
+}
+
+
+@media (min-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 280px 280px;
+    grid-template-areas:
+      "horizontal-1 horizontal-1 horizontal-1 cuadrada-1"
+      "cuadrada-2 horizontal-2 horizontal-2 horizontal-2";
+  }
+
+  .movil{
+    display: none;
+  }
+
+  .escritorio{
+    display: block;
+  }
+}
+
+
+/*Cursos*/
+
+.section-cursos-dos{
+    padding: 2rem;
+    
+}
+.section-cursos{
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+    
+}
+.cursos-texto{
+    padding-bottom: 2rem;
+}
+
+.tarjeta-uno{
+    background-color: #a15516;
+    width: 205%;
+    border-radius: 20px;
+}
+
+.tarjeta-uno h2{
+    font-size: 2rem ;
+}
+
+.tarjeta-uno p {
+    color: #ebe3d2 ;
+    padding: 1.3rem;
+}
+.tarjeta-dos{
+    background-color: #a15516;
+    border-radius: 20px;
+}
+
+.tarjeta-dos h2{
+    font-size: 2rem;
+}
+
+.tarjeta-dos p {
+    color: #ebe3d2 ;
+    padding: 1.3rem;
+}
+
+.cursos-h2{
+    font-size: 2em;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.section-cursos-dos h3{
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-top: 1.5rem;
+
+}
+
+.section-cursos-dos ul{
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+
+/*Nosotros*/
+
+.main-nosotros{
+    margin: 2rem;
+}
+
+/*imagenes*/
+
+.fotos figure{
+    outline: none;
+}
+
+.fotos figure:focus img{
+    box-shadow: 7px 7px 10px rgba(68, 32, 2);
+    transition: all 0.5s;
+}
+.entrada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.interior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mostrador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.section-historia{
+    margin: 1.5rem;
+}
+
+.section-historia h2{
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.section-propuesta{
+    margin: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.section-propuesta h2{
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.section-valores{
+    margin: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.section-valores h2{
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.section-valores ul{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.section-equipo{
+    margin: 1.5rem;
+}
+
+.section-equipo h2{
+    text-decoration: underline;
+    font-size: 2rem;
+
+}
+
+
+@media (min-width: 1024px) {
+    .main-index{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "hero hero"
+            "bienvenida bienvenida"
+            "informacion productos";    
+    }
+
+    .section-cursos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "barista pasteleria";
+    }
+
+}
+
+
+
+/*Preguntas*/
+.preguntas-h2{
+    padding-top: 2rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.accordion-item {
+  background-color: #ebe3d2;
+  border-color: #000000;
+}
+
+.accordion-button {
+  background-color: #ebe3d2;
+  color: #000000;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ebe3d2;
+  color: #000000;
+}
+
+.accordion-body {
+  background-color: #ebe3d2;
+  color: #000000;
+}
