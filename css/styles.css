@@ -160,6 +160,24 @@ figcaption{
 .productos{
     grid-area: productos;
 }
+.boton-promo {
+  background-color: #442002;
+  color: #ebe3d2;
+  border: none;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+
+.boton-promo:hover {
+  background-color: #977253;
+  color: white;
+}
+
+.boton-cerrar {
+  background-color: #833e06;
+  color: white;
+}
 
 .hero{
     grid-area: hero;
@@ -213,6 +231,7 @@ figcaption{
     font-weight: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    text-align: center;
 }
 
 /*Galeria*/
