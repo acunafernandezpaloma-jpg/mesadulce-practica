@@ -388,8 +388,16 @@ figcaption{
 
 
 @media (min-width: 1024px) {
-  .section-cursos,
-  .section-cursos-dos,
+  .section-cursos{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-cursos-dos{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .cursos-texto {
     max-width: 1200px;
     margin: 0 auto;
@@ -491,9 +499,6 @@ figcaption{
             "bienvenida bienvenida"
             "informacion productos";    
     }
-
-    
-
 }
 
 
@@ -522,4 +527,40 @@ figcaption{
 .accordion-body {
   background-color: #ebe3d2;
   color: #000000;
+}
+
+/*Contacto*/
+@media (max-width: 767px) {
+  .contacto {
+    display: block;
+    padding: 1rem;
+  }
+
+  .contacto article{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .contacto section {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .contacto input{
+    width: 100%;
+  }
+
+  .contacto textarea{
+    width: 100%;
+  }
+
+  .contacto img{
+    width: 100%;
+  }
+
+  .contacto iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  
 }
