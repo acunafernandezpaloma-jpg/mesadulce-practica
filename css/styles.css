@@ -102,6 +102,7 @@ footer{
     width: 100%;
     height: 100%;
     display: grid;
+    gap: 2rem;
     background-color: rgba(60, 30, 10, 0.8);
     color: white;
     padding: 20px;
@@ -323,71 +324,81 @@ figcaption{
 
 /*Cursos*/
 
-.section-cursos-dos{
-    padding: 2rem;
-    
-}
-.section-cursos{
-    display: flex;
-    justify-content: center;
-    gap: 15rem;
-    
-}
-.cursos-texto{
-    padding-bottom: 2rem;
+
+.section-cursos-dos {
+  padding: 2rem 1rem;
 }
 
-.tarjeta-uno{
-    background-color: #a15516;
-    width: 205%;
-    border-radius: 20px;
+.cursos-texto {
+  padding: 0 1rem 2rem;
 }
 
-.tarjeta-uno h2{
-    font-size: 2rem ;
+.section-cursos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 1rem;
 }
 
-.tarjeta-uno p {
-    color: #ebe3d2 ;
-    padding: 1.3rem;
-}
-.tarjeta-dos{
-    background-color: #a15516;
-    border-radius: 20px;
+.tarjeta-uno, .tarjeta-dos {
+  width: 100%;
+  background-color: #a15516;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.tarjeta-dos h2{
-    font-size: 2rem;
+.tarjeta-uno h2, .tarjeta-dos h2 {
+  font-size: 2rem;
+  padding: 1rem;
 }
 
-.tarjeta-dos p {
-    color: #ebe3d2 ;
-    padding: 1.3rem;
+.tarjeta-uno p, .tarjeta-dos p {
+  color: #ebe3d2;
+  padding: 0 1.3rem 1.3rem;
 }
 
-.cursos-h2{
-    font-size: 2em;
-    text-decoration: underline;
-    display: flex;
-    justify-content: center;
-    margin-top: 1.5rem;
+.tarjeta-uno figure, .tarjeta-dos figure {
+  margin: 0;
 }
 
-.section-cursos-dos h3{
-    font-size: 2rem;
-    text-decoration: underline;
-    margin-top: 1.5rem;
-
+.tarjeta-uno img, .tarjeta-dos img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.section-cursos-dos ul{
-    margin: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    
+.cursos-h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-align: center;
 }
 
+.section-cursos-dos h3 {
+  font-size: 1.6rem;
+  text-decoration: underline;
+  margin-top: 1.5rem;
+}
+
+.section-cursos-dos ul {
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+@media (min-width: 1024px) {
+  .section-cursos,
+  .section-cursos-dos,
+  .cursos-texto {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-cursos {
+    gap: 3rem;
+  }
+}
 
 /*Nosotros*/
 
@@ -481,11 +492,7 @@ figcaption{
             "informacion productos";    
     }
 
-    .section-cursos{
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-            "barista pasteleria";
-    }
+    
 
 }
 
