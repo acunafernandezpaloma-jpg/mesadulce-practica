@@ -1,0 +1,28 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+.tarjetas {
+    @extend %tarjetas;
+
+    h2 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    p {
+        color: $color-claro-general;
+        padding: 0 1.3rem 1.3rem;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+}

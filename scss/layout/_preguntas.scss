@@ -1,0 +1,30 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+
+.preguntas-h2 {
+    padding-top: 2rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.accordion-item {
+    background-color: $color-claro-general;
+    border-color: #000000;
+}
+
+.accordion-button {
+    background-color: $color-claro-general;
+    color: #000000;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: $color-claro-general;
+    color: #000000;
+}
+
+.accordion-body {
+    background-color: $color-claro-general;
+    color: #000000;
+}

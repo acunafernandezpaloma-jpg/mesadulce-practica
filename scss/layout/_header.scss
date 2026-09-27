@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+header{
+    @extend %header;
+    nav ul{
+        @extend %header-lista;
+    }
+    .hamburguesa{
+        color: $color-general ;
+        border: 1px solid black;
+        font-size: 3rem;
+    }
+}
+
+.link-menu{
+    color: $color-general;
+    background-color: $color-claro-general;
+    padding: 0.3rem 0.5rem;
+    font-weight: bold;
+    padding: 0.3rem;
+    border-radius: 5px;
+    transition: all 0.5s;
+
+    &:hover{
+        background-color: $decoracion-ytitulos;
+    }
+    &:active{
+        text-decoration: line-through;
+        color: white;
+    }
+}    

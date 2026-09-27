@@ -1,0 +1,24 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+@media (max-width: 768px) {
+    .contacto {
+    display: block;
+    padding: 1rem;
+
+    article, section{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    input, textarea, img{
+        width: 100%;
+    }
+
+    iframe{
+        width: 100%;
+        height: 250px;
+    }
+    }
+}

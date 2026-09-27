@@ -1,0 +1,17 @@
+@use "utilities/variables";
+@use "utilities/extend";
+@use "utilities/mixin";
+
+@use "base/reseteo";
+@use "base/generales.scss";
+
+@use "layout/header";
+@use "layout/main";
+@use "layout/footer";
+@use "layout/galeria";
+@use "layout/cursos";
+@use "layout/nosotros";
+@use "layout/preguntas";
+@use "layout/contacto";
+
+@use "components/tarjetas"

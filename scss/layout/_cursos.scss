@@ -1,0 +1,76 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+
+.section-cursos-dos {
+    padding: 2rem;
+
+    h3 {
+        font-size: 1.6rem;
+        text-decoration: underline;
+        margin-top: 1.5rem;
+    }
+
+    ul {
+        margin: 1.5rem;
+        @include flex (column, null, null, 2rem);
+    }
+
+}
+
+.cursos-texto {
+    padding-bottom: 2rem;
+}
+
+.section-cursos {
+    @include flex (null, center, null, 15rem);
+}
+
+
+
+.cursos-h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+    @include flex(null, center, null, null);
+    margin-top: 1.5rem;
+}
+
+
+
+
+/*Responsive mobile*/
+@media (max-width: 768px) {
+    .section-cursos {
+        @include grid (1fr, null, null, 30px);
+        padding: 20px 15px;
+    }
+
+    .tarjetas {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px 20px;
+        border-radius: 15px;
+
+        h2 {
+            font-size: $lettersize;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+
+
+}

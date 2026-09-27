@@ -1,0 +1,87 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+
+.main-nosotros {
+    margin: 2rem;
+}
+
+.fotos figure {
+    outline: none;
+    
+}
+
+.fotos figure:focus img {
+    box-shadow: 7px 7px 10px $color-general;
+    transition: all 0.5s;
+}
+
+.entrada {
+    @include flex (column, center, center, null);
+
+}
+
+.interior {
+    @include flex (column, center, center, null);
+}
+
+.mostrador {
+    @include flex (column, center, center, null);
+}
+
+.section-historia {
+    margin: 1.5rem;
+
+    h2 {
+        text-decoration: underline;
+        font-size: 2rem;
+    }
+}
+
+.section-propuesta {
+    margin: 1.5rem;
+    padding-bottom: 2rem;
+
+    h2 {
+        text-decoration: underline;
+        font-size: 2rem;
+    }
+}
+
+.section-valores {
+    margin: 1.5rem;
+    padding-bottom: 2rem;
+
+    h2 {
+        text-decoration: underline;
+        font-size: 2rem;
+    }
+    ul{
+        list-style: none;
+        font-size: 1.3rem;
+    }
+}
+
+
+.section-equipo {
+    margin: 1.5rem;
+
+    h2 {
+        text-decoration: underline;
+        font-size: 2rem;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .main-index {
+        @include grid(1fr 1fr,
+            null, ("hero hero"
+                "bienvenida bienvenida"
+                "informacion productos"
+            ),null);
+    }
+}
+

@@ -1,0 +1,78 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+
+.main-index{
+    @extend %index-main;
+    .hero{   
+        grid-area: hero;
+    }
+    .bienvenida{
+        grid-area: bienvenida;
+    }
+
+    .informacion{
+        grid-area: informacion;
+    }
+
+    .productos{
+        grid-area: productos;
+    }
+}
+
+.hero{
+    @extend %hero;
+    
+    h2{
+        margin: 0;
+        color: white;
+        font-size: 24px;
+    }
+    
+
+}
+.hero a{
+    @extend %hero-a;
+    &:hover{
+        background-color: #977253;        
+    }
+    &:active{
+        text-decoration: line-through;
+        color: white;
+    }
+}
+
+.boton-promo {
+    background-color: $color-general;
+    color: $color-claro-general;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: $lettersize;
+    &:hover{
+        background-color: #977253;
+        color: white;
+    }
+}
+
+.boton-cerrar {
+    background-color: $decoracion-ytitulos;
+    color: white;
+}
+
+.index-h2{
+    text-decoration: underline;
+    font-size: 2rem;
+    font-weight: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+

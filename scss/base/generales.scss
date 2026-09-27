@@ -1,0 +1,51 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+img{
+    max-width: 100%;
+}
+
+a{
+    font-size: $lettersize;
+    text-decoration: none;
+}
+
+p{
+    font-size: $lettersize;
+}
+
+.logo{
+    width: 70px;
+}
+
+body{
+    background-color: $color-claro-general;
+    font-family: $fuente;
+    font-style: normal;
+    font-weight: 400;
+}
+
+main{
+    padding: 1.5rem;
+    color: $color-general;
+}  
+
+figcaption{
+    text-decoration: underline;
+    font-weight: bold;
+    @include flex(null, center, center, null);
+}
+
+article li{
+    margin: 1.3rem;
+    font-size: 1.3rem;
+}
+
+h1{
+    @include flex (null, center, null, null);
+    color: $decoracion-ytitulos;
+    margin: 0.5rem;
+    font-size: 3rem;
+    text-decoration: underline;
+}
