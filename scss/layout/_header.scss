@@ -9,7 +9,7 @@ header{
     }
     .hamburguesa{
         color: $color-general ;
-        border: 1px solid black;
+        border: 1px solid $borde-hamburguesa;
         font-size: 3rem;
     }
 }
@@ -28,6 +28,6 @@ header{
     }
     &:active{
         text-decoration: line-through;
-        color: white;
+        color: $active;
     }
 }    

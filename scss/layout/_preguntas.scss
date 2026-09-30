@@ -11,20 +11,20 @@
 
 .accordion-item {
     background-color: $color-claro-general;
-    border-color: #000000;
+    border-color: $color-acordeon;
 }
 
 .accordion-button {
     background-color: $color-claro-general;
-    color: #000000;
+    color: $color-acordeon;
 }
 
 .accordion-button:not(.collapsed) {
     background-color: $color-claro-general;
-    color: #000000;
+    color: $color-acordeon;
 }
 
 .accordion-body {
     background-color: $color-claro-general;
-    color: #000000;
+    color: $color-acordeon;
 }

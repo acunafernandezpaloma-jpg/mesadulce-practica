@@ -24,10 +24,8 @@
 }
 
 .section-cursos {
-    @include flex (null, center, null, 15rem);
+    @include grid (1fr, null, null, 2rem);
 }
-
-
 
 .cursos-h2 {
     font-size: 2rem;
@@ -40,11 +38,11 @@
 
 
 /*Responsive mobile*/
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .section-cursos {
-        @include grid (1fr, null, null, 30px);
-        padding: 20px 15px;
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
     .tarjetas {
         width: 100%;
@@ -72,5 +70,8 @@
         }
     }
 
-
+@media (min-width: 1024px) {
+    .section-cursos {
+        gap: 3rem;
+    }
 }

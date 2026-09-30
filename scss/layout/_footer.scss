@@ -9,8 +9,23 @@ footer{
         @extend %footer-lista;
     }
     p{
-        color: #000000;
+        color: $color-p;
         background-color:$color-claro-general;
         @include flex(column,null, center, null);
     }
+}
+
+//responsive
+@media (min-width: 768px) {
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media (min-width: 1024px) {
+    footer {
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+
 }

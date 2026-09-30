@@ -5,8 +5,15 @@
 
 .main-nosotros {
     margin: 2rem;
+    width: 100%;
+    padding: 1rem;
 }
 
+
+.main-nosotros img {
+    width: 100%;
+    height: auto;
+}
 .fotos figure {
     outline: none;
     
@@ -73,7 +80,7 @@
     }
 }
 
-
+//responsive
 
 @media (min-width: 1024px) {
     .main-index {
@@ -85,3 +92,9 @@
     }
 }
 
+@media (min-width: 768px) {
+
+    .main-nosotros {
+        padding: 2rem;
+    }
+}

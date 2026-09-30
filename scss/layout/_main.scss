@@ -21,12 +21,28 @@
     }
 }
 
+@media (min-width: 768px) {
+    .main-index {
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-index {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "hero hero"
+            "bienvenida bienvenida"
+            "informacion productos";
+    }
+}
+
 .hero{
     @extend %hero;
     
     h2{
         margin: 0;
-        color: white;
+        color: $color-h2;
         font-size: 24px;
     }
     
@@ -35,11 +51,11 @@
 .hero a{
     @extend %hero-a;
     &:hover{
-        background-color: #977253;        
+        background-color: $fondo-hover;        
     }
     &:active{
         text-decoration: line-through;
-        color: white;
+        color: $active;
     }
 }
 
@@ -51,8 +67,8 @@
     border-radius: 4px;
     font-size: $lettersize;
     &:hover{
-        background-color: #977253;
-        color: white;
+        background-color: $fondo-hover;
+        color: $hover;
     }
 }
 
