@@ -3,7 +3,7 @@
 @use "utilities/mixin";
 
 @use "base/reseteo";
-@use "base/generales.scss";
+@use "base/generales";
 
 @use "layout/header";
 @use "layout/main";
@@ -14,4 +14,4 @@
 @use "layout/preguntas";
 @use "layout/contacto";
 
-@use "components/tarjetas"
+@use "components/tarjetas";
