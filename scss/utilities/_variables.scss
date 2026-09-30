@@ -5,11 +5,14 @@ $color-general: #442002;
 $decoracion-ytitulos: #833e06;
 $color-claro-general: #ebe3d2;
 $tarjetas: #a15516;
+$color-boton: #ffffff;
+$color-acordeon: #000000;
 
 // fuente
 
 $fuente: "Poppins", sans-serif;
-
+$color-p:#000000;
+$color-h2: #ffffff;
 //tamaño fuente
 $lettersize: 1.5rem;
 
@@ -17,8 +20,13 @@ $lettersize: 1.5rem;
 
 $sombra: 7px 7px 10px #442002;
 
-//fondo header
-$fondo-header: url(../img/header-cinco.png);
 
-// fondo footer
+// header
+$fondo-header: url(../img/header-cinco.png);
+$active: #ffffff;
+$hover: #ffffff;
+$fondo-hover: #977253;
+$borde-hamburguesa: #000000;
+// footer
 $fondo-footer: url(../img/footer-dos.png);
+
