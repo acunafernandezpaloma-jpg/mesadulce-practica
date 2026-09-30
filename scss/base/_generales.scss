@@ -2,10 +2,11 @@
 @use "../utilities/extend" as *;
 @use "../utilities/mixin" as *;
 
-img{
+img {
+    display: block;
     max-width: 100%;
+    height: auto;
 }
-
 a{
     font-size: $lettersize;
     text-decoration: none;
