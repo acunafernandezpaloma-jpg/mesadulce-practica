@@ -1,0 +1,23 @@
+{
+  "name": "mesadulce",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/acunafernandezpaloma-jpg/mesadulce-practica#readme",
+  "bugs": {
+    "url": "https://github.com/acunafernandezpaloma-jpg/mesadulce-practica/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acunafernandezpaloma-jpg/mesadulce-practica.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
+}

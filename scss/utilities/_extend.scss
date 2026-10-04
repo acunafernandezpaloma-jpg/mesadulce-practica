@@ -16,32 +16,24 @@
 
 
 %footer{
-    %footer {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 2rem 1.5rem;
     margin: 0;
+    box-sizing: border-box;
     background-image: $fondo-footer;
     background-repeat: repeat-x;
-    border-top: $bordes;
     border-bottom: $bordes;
+    border-top: $bordes;
+    width: 100%;
+    @include grid(1fr,null,null, 2rem);
     color: white;
-    @include grid(
-        1fr,
-        null,
-        null,
-        2rem
-    );
-}
+    padding: 2rem 1.5rem;
 }
 
 %footer-lista{
-    @include flex(row, space-evenly, center, 1rem);
+    @include flex(null, space-evenly, center, null);
     list-style: none;
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap
 }
+
+
 
 //main
 %index-main {

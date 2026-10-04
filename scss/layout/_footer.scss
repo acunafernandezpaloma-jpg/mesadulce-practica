@@ -7,14 +7,14 @@ footer{
     @extend %footer;
     ul{
         @extend %footer-lista;
-    }
+        @include flex (null,center,null,5rem);
     p{
         color: $color-p;
-        background-color:$color-claro-general;
+        background-color: $color-claro-general;
         @include flex(column,null, center, null);
     }
 }
-
+}
 //responsive
 @media (min-width: 768px) {
     footer {
@@ -24,8 +24,20 @@ footer{
 }
 @media (min-width: 1024px) {
     footer {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr;
         align-items: center;
     }
 
+    footer ul {
+        justify-content: center;
+    }
+
+    footer p {
+        justify-content: center;
+        color: $color-p;
+        background-color: $color-claro-general;
+        opacity: 50%;
+        @include flex(column,null, center, null);
+    }
 }
+

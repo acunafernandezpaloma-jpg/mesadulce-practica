@@ -7,21 +7,39 @@
     padding: 1rem;
 }
 
+.contacto article,
+.contacto section{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
 .contacto input,
-.contacto textarea {
+.contacto textarea,
+.contacto img {
     width: 100%;
     box-sizing: border-box;
 }
 
 .contacto iframe {
     width: 100%;
+    max-width: 100%;
+    border: 0;
+}
+
+.boton{
+    background-color: $decoracion-ytitulos;
+    color: $color-claro-general;
+    transition: transform 0.2s ease-out;
+
+    &:active {
+        transform: scale(1.2);
+    }
 }
 
 //responsive
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .contacto {
-    display: block;
-    padding: 2rem;
+        padding: 2rem;
 
     article, section{
         width: 100%;

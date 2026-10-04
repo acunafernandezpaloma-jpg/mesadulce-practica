@@ -34,6 +34,10 @@
     img {
         object-position: center 60%;
         border-radius: 23px;
+        transition: transform 1s;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
 }
 
@@ -43,6 +47,10 @@
     img {
         object-position: center 80%;
         border-radius: 23px;
+        transition: transform 1s;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
 }
 
@@ -52,6 +60,10 @@
     img {
         object-position: center 40%;
         border-radius: 23px;
+        transition: transform 1s;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
 }
 
@@ -61,6 +73,10 @@
     img {
         object-position: center 75%;
         border-radius: 23px;
+        transition: transform 1s;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
 }
 

@@ -18,11 +18,19 @@
     figure {
         margin: 0;
     }
-
+    figcaption{
+        padding-top: 5rem;
+    }
     img {
         width: 100%;
         height: auto;
         display: block;
+        border-radius: 15rem;
+
+        &:hover{
+            transition: transform 1s;
+            transform: scale(1.2);
+        }
     }
 
 }

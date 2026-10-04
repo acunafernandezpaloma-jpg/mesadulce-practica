@@ -51,11 +51,12 @@
 .hero a{
     @extend %hero-a;
     &:hover{
-        background-color: $fondo-hover;        
+        background-color: $fondo-hover; 
     }
     &:active{
         text-decoration: line-through;
         color: $active;
+        
     }
 }
 
@@ -66,9 +67,15 @@
     padding: 1rem;
     border-radius: 4px;
     font-size: $lettersize;
+    --animate-duration: 3.5s;
     &:hover{
         background-color: $fondo-hover;
         color: $hover;
+    }
+    &:active{
+        transform: scale(0.8);
+        transition: 0.5s;
+
     }
 }
 

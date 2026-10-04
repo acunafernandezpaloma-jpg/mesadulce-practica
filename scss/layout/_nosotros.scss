@@ -11,8 +11,9 @@
 
 
 .main-nosotros img {
-    width: 100%;
+    width: 60%;
     height: auto;
+    border-radius: 15px;
 }
 .fotos figure {
     outline: none;
@@ -83,12 +84,8 @@
 //responsive
 
 @media (min-width: 1024px) {
-    .main-index {
-        @include grid(1fr 1fr,
-            null, ("hero hero"
-                "bienvenida bienvenida"
-                "informacion productos"
-            ),null);
+    .main-nosotros {
+        gap: 2rem;
     }
 }
 
