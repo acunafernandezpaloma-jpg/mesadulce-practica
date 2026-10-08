@@ -43,10 +43,24 @@ article li{
     font-size: 1.3rem;
 }
 
+@keyframes aparecerTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 h1{
     @include flex (null, center, null, null);
     color: $decoracion-ytitulos;
     margin: 0.5rem;
     font-size: 3rem;
     text-decoration: underline;
+    animation: aparecerTitulo 0.8s ease-out;
 }
+
