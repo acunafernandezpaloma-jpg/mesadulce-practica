@@ -249,6 +249,16 @@ header .hamburguesa {
   text-align: center;
 }
 
+.informacion,
+.productos {
+  padding-left: 1.5rem;
+}
+
+.productos figure {
+  margin-right: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 footer {
   grid-template-columns: 1fr;
   justify-items: center;
@@ -269,8 +279,8 @@ footer ul li a {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  background-color: rgba(68, 32, 2, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.4509803922);
+  background-color: rgba(68, 32, 2, 0.8196078431);
   box-shadow: 0 3px 9px rgba(35, 17, 4, 0.3);
   transition: transform 180ms ease, filter 180ms ease, background-color 180ms ease;
 }
