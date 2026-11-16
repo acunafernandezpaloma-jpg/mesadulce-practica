@@ -19,7 +19,7 @@ Secciones del sitio:
 - Preguntas frecuentes
 - Contacto
 
-## Funcionamiento de JavaScript
+Funcionamiento de JavaScript
 
 Se utilizó JavaScript para desarrollar un menú interactivo de compra de cookies para Mesa Dulce. El programa permite seleccionar un sabor, consultar su precio, ingresar una cantidad y verificar la disponibilidad de stock.
 
