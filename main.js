@@ -1,7 +1,7 @@
 let opcion 
-const stockVainichips = 6
-const stockChocochips = 15
-const stockRedVelvet = 4
+let stockVainichips = 6
+let stockChocochips = 15
+let stockRedVelvet = 4
 let continuar = true;
 
 
