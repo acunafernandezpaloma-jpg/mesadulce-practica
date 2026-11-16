@@ -10,7 +10,7 @@ Tecnologias utilizadas:
 - CSS - SCSS: Diseño responsive, animaciones y arquitectura modular.
 - Git & Github: Control de versiones y hosting a través de GitHub Pages.
 - JavaScript
-- 
+
 Secciones del sitio:
 - Inicio
 - Galeria
